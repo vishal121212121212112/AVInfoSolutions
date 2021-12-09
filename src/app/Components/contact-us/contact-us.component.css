@@ -1,0 +1,16 @@
+.center
+{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hidden-table:hover {
+  background-color: #fff !important;
+}
+
+.example-full-width {
+    width: 100%;
+  }

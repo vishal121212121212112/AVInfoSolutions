@@ -1,0 +1,31 @@
+.home1 {
+    /* background: #ffffff url('src\assets\images\laptop-from-above.jpg') no-repeat center top; */
+    background: #ffffff url("src\assets\images\Architecture.jpg") no-repeat center
+      top;
+    background-size: cover;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  .prnt_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home1 .first {
+    font: italic small-caps bold 22px/30px Georgia, serif;
+    color: cornsilk;
+  }
+  .text_line{
+  clear: both;
+  display: inline-flex;
+  font-size: 36px;
+  position: relative;
+  color: #333;
+  
+  }
+  .text_centre{
+    position: relative;
+    
+  }
