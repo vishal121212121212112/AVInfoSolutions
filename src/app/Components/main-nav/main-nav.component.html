@@ -16,14 +16,17 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>AVinfoSolutions</span>
+      <div >
+      <span [ngClass]="{hidden: !(isHandset$ | async)}">av infoSolutions</span>
+      </div>
+      <span [ngClass]="{hidden: (isHandset$ | async)}">AV infoSolutions</span>
       <span class="example-spacer"></span>
-        <div [ngClass]="{hidden: (isHandset$ | async)}">
-          <a mat-button routerLink="/home">Home</a>
-          <a mat-button routerLink="//services">Services</a>
-          <a mat-button routerLink="/contact-us">Contact Us</a>
-          <a mat-button routerLink="/about-us">About Us</a>
-        </div>
+      <div [ngClass]="{hidden: (isHandset$ | async)}">
+        <a mat-button routerLink="/home">Home</a>
+        <a mat-button routerLink="/services">Services</a>
+        <a mat-button routerLink="/contact-us">Contact Us</a>
+        <a mat-button routerLink="/about-us">About Us</a>
+      </div>
     </mat-toolbar>
     <!-- Add Content Here -->
     <ng-content></ng-content>
