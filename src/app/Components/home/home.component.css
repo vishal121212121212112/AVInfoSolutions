@@ -11,12 +11,11 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-
   }
   .home1 .first {
     font: italic small-caps bold 22px/30px Georgia, serif;
     color: cornsilk;
-    position: absolute;
+    
 
   }
  .container
