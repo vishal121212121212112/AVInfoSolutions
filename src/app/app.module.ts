@@ -26,6 +26,8 @@ import { MainNavComponent } from './Components/main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomeComponent } from './Components/home/home.component';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 @NgModule({
@@ -45,7 +47,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatIconModule,MatMenuModule,MatToolbarModule,MatButtonToggleModule,
     MatGridListModule,FlexLayoutModule,MatSidenavModule,MatListModule,MatFormFieldModule,MatButtonModule,
     MatInputModule,MatTableModule,MatSelectModule,
-     FormsModule,ReactiveFormsModule,RouterModule, LayoutModule,MatDividerModule  
+     FormsModule,ReactiveFormsModule,RouterModule, LayoutModule,MatDividerModule,MatCardModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
