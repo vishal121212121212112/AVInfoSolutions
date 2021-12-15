@@ -1,49 +1,71 @@
 .home1 {
-    background: #ffffff url("src\assets\images\Architecture.jpg") no-repeat center
-      top;
-    background-size: cover;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
-  .prnt_first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-  }
-  .home1 .first {
-    font: italic small-caps bold 22px/30px Georgia, serif;
-    color: cornsilk;
-    
-
-  }
- .container
- {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .mat-card {
-   width: 300px;
-   height: 300px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   padding: 10px 25px;
-   margin: 10px;
- }
- .mat-card-image
- {
+  background: #ffffff url("src\assets\images\Architecture.jpg") no-repeat center
+    top;
+  background-size: cover;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.prnt_first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.home1 .first {
+  font: italic small-caps bold 22px/30px Georgia, serif;
+  color: cornsilk;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mat-card {
+  width: 300px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px 25px;
+  margin: 10px;
+}
+.element h3 {
   margin: 0;
-
+}
+.mat-card-image {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100px;
+  width: 200px;
 }
 
- .element:hover
- {
-   transition: opacity 0.35s, transform 0.35s;
-   background-color: rgb(240, 228, 228);
- }
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 3em rgba(184, 39, 39, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.55em);
+}
+https://codepen.io/AdamCCFC/pen/WvzBKq
