@@ -6,6 +6,9 @@
   width: 100vw;
   height: 100vh;
 }
+.main-content{
+  margin: 20px;
+}
 .prnt_first {
   display: flex;
   justify-content: center;
