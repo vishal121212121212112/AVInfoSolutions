@@ -6,9 +6,7 @@
   width: 100vw;
   height: 100vh;
 }
-.main-content{
-  margin: 20px;
-}
+
 .prnt_first {
   display: flex;
   justify-content: center;
@@ -18,40 +16,4 @@
 .home1 .first {
   font: italic small-caps bold 22px/30px Georgia, serif;
   color: cornsilk;
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.mat-card {
-  width: 300px;
-  height: 310px;
-  padding: 10px 25px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  transition: ease-in .23s;
-}
-.element h3 {
-  margin: 0;
-}
-.mat-card-image {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 10px;
-  height: 100px;
-  width: 200px;
-}
-
-
-
-.element:hover,
-.element:focus {
-  box-shadow: 0 0.5em 0.9em -0.4em #000;
-  transform: translateY(-1em);
 }
