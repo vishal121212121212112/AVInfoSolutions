@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
   selector: 'app-contact-us',
@@ -10,21 +10,21 @@ import {ErrorStateMatcher} from '@angular/material/core';
 export class ContactUsComponent implements OnInit {
 
   constructor() { }
-  Name='string';
-  EmailRequired='string';
-  description='string';
-  PhoneNumber='int';
+  Name = 'string';
+  EmailRequired = 'string';
+  description = 'string';
+  PhoneNumber = 'int';
 
-  NameFormControl=new FormControl('', [
+  NameFormControl = new FormControl('', [
     Validators.required,
   ]);
-  emailFormControl=new FormControl('', [
+  emailFormControl = new FormControl('', [
     Validators.required,
   ]);
-  descriptionFormControl=new FormControl('', [
+  descriptionFormControl = new FormControl('', [
     Validators.required,
   ]);
-  PhoneNumberFormControl=new FormControl('', [
+  PhoneNumberFormControl = new FormControl('', [
     Validators.required,
   ]);
 
@@ -32,9 +32,9 @@ export class ContactUsComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-  export class MyErrorStateMatcher implements ErrorStateMatcher {
-    isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-      const isSubmitted = form && form.submitted;
-      return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-    }
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
 }     
