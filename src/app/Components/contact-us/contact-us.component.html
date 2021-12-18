@@ -1,99 +1,117 @@
-<div>
-    <div class="center">
-        <form class="borderbox">
-            <h2>Give your Information</h2>
-            <table>
-                <tr>
-                    <td>
-                        <mat-form-field class="example-full-width" appearance="outline" value="Name">
-                            <mat-label> Name</mat-label>
-                            <input type="name" matInput [formControl]="NameFormControl" [errorStateMatcher]="matcher"
-                                placeholder="Ex. Puneet">
-                            <mat-error
-                                *ngIf="NameFormControl.hasError('Name') && !NameFormControl.hasError('required')">
-                                Please enter a valid First Name
-                            </mat-error>
-                            <mat-error *ngIf="NameFormControl.hasError('required')">
-                            </mat-error>
-                        </mat-form-field>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <mat-form-field class="example-full-width" appearance="outline" value="EmailRequired">
-                            <mat-label>Email</mat-label>
-                            <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-                                placeholder="Ex. pat@example.com">
-                            <mat-error
-                                *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                                Please enter a valid email address
-                            </mat-error>
-                            <mat-error *ngIf="emailFormControl.hasError('required')">
-                            </mat-error>
-                        </mat-form-field>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <mat-form-field class="example-full-width" appearance="outline" value="PhoneNumber">
-                            <mat-label>PhoneNumber</mat-label>
-                            <input type="name" matInput [formControl]="PhoneNumberFormControl"
-                                [errorStateMatcher]="matcher" placeholder="Ex. 123456">
-                            <mat-error
-                                *ngIf="PhoneNumberFormControl.hasError('PhoneNumber') && !PhoneNumberFormControl.hasError('required')">
-                                Please enter a valid PhoneNumber
-                            </mat-error>
-                            <mat-error *ngIf="PhoneNumberFormControl.hasError('required')">
-                            </mat-error>
-                        </mat-form-field>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <mat-form-field class="example-full-width" appearance="outline" value="descriptionbox">
-                            <mat-label>description </mat-label>
-                            <input type="text" matInput [formControl]="descriptionFormControl"
-                                [errorStateMatcher]="matcher" placeholder="filldescription">
-                            <mat-error
-                                *ngIf="descriptionFormControl.hasError('filldescription') && !descriptionFormControl.hasError('required')">
-                                Please enter a valid description
-                            </mat-error>
-                            <mat-error *ngIf="descriptionFormControl.hasError('required')">
-                            </mat-error>
-                        </mat-form-field>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button mat-stroked-button>Submit</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-    <p class="text-center"> <b>GOT A QUESTION? WE'RE HERE TO HELP!</b></p>
+<div class="container">
+    <div class="row">
 
-<div class="container" >
-    <mat-card class="element raise pulse">
-        <h3><b>AvinfoSolutions Office Address</b></h3>
-        <p>
-            𝟏𝟕𝟒/𝟏𝟔, 𝐒𝐇𝐈𝐕𝐀𝐉𝐈 𝐍𝐀𝐆𝐀𝐑,
-            𝐆𝐔𝐑𝐔𝐆𝐑𝐀𝐌,𝐆𝐔𝐑𝐆𝐀𝐎𝐍,
-            <br>
-            𝐏𝐢𝐧 𝐂𝐨𝐝𝐞,𝟏𝟐𝟐𝟎𝟎𝟏
-            𝐈𝐧𝐝𝐢𝐚.
-        </p>
-    </mat-card>
-    <mat-card class="element raise pulse">
-        <h3><b>Head Office</b></h3>
-        <p>
-            𝟕𝟖𝟔, 𝐒𝐡𝐚𝐫𝐦𝐚 𝐂𝐨𝐦𝐩𝐥𝐞𝐱,
-            𝐎𝐩𝐩. 𝐃𝐒 𝐅𝐚𝐫𝐦,
-            𝐍𝐞𝐚𝐫 𝐂𝐫𝐨𝐬𝐬 𝐑𝐨𝐚𝐝,
-            𝐏𝐮𝐧𝐣𝐚𝐛 - 𝟏𝟒𝟓𝟎𝟐𝟓.
-            +𝟗𝟏 𝟕𝟖𝟖𝟗𝟏𝟏𝟏𝟎𝟕𝟏
-            𝐀𝐯@𝐢𝐧𝐟𝐨𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬.𝐜𝐨𝐦
-        </p>
-    </mat-card>
-    https://www.optiinfo.com/contact-us/
+        <div class="col-8 ">
+            <p class="text-center"> <b>GOT A QUESTION? WE'RE HERE TO HELP!</b></p>
+            <div class="row justify-content-start">
+                <mat-card class="element raise pulse col">
+                    <h3><b>AvinfoSolutions Office Address</b></h3>
+                    <span>
+                        <span class="material-icons">
+                            location_on
+                        </span>
+                        𝟏𝟕𝟒/𝟏𝟔, 𝐒𝐇𝐈𝐕𝐀𝐉𝐈 𝐍𝐀𝐆𝐀𝐑,
+                        𝐆𝐔𝐑𝐔𝐆𝐑𝐀𝐌,𝐆𝐔𝐑𝐆𝐀𝐎𝐍,
+                        <br>
+                        𝐏𝐢𝐧 𝐂𝐨𝐝𝐞,𝟏𝟐𝟐𝟎𝟎𝟏
+                        𝐈𝐧𝐝𝐢𝐚.
+                    </span>
+                    <span>
+                        <span class="material-icons">
+                            phone_in_talk
+                        </span>
+                        <a href="tel:7986342110">
+                            +91 7986 342 110
+                        </a>
+                    </span>
+                </mat-card>
+                <mat-card class="element raise pulse col">
+                    <h3><b>Head Office</b></h3>
+                    <p>
+                        𝟕𝟖𝟔, 𝐒𝐡𝐚𝐫𝐦𝐚 𝐂𝐨𝐦𝐩𝐥𝐞𝐱,
+                        𝐎𝐩𝐩. 𝐃𝐒 𝐅𝐚𝐫𝐦,
+                        𝐍𝐞𝐚𝐫 𝐂𝐫𝐨𝐬𝐬 𝐑𝐨𝐚𝐝,
+                        𝐏𝐮𝐧𝐣𝐚𝐛 - 𝟏𝟒𝟓𝟎𝟐𝟓.
+                        +𝟗𝟏 𝟕𝟖𝟖𝟗𝟏𝟏𝟏𝟎𝟕𝟏
+                        𝐀𝐯@𝐢𝐧𝐟𝐨𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬.𝐜𝐨𝐦
+                    </p>
+                </mat-card>
+            </div>
+        </div>
+
+
+
+        <div class="col-4">
+            <form class="example-form">
+                <h2>Give your Information</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width" appearance="outline" value="Name">
+                                <mat-label> Name</mat-label>
+                                <input type="name" matInput [formControl]="NameFormControl"
+                                    [errorStateMatcher]="matcher" placeholder="Ex. Puneet">
+                                <mat-error
+                                    *ngIf="NameFormControl.hasError('Name') && !NameFormControl.hasError('required')">
+                                    Please enter a valid First Name
+                                </mat-error>
+                                <mat-error *ngIf="NameFormControl.hasError('required')">
+                                </mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width" appearance="outline" value="EmailRequired">
+                                <mat-label>Email</mat-label>
+                                <input type="email" matInput [formControl]="emailFormControl"
+                                    [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
+                                <mat-error
+                                    *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                    Please enter a valid email address
+                                </mat-error>
+                                <mat-error *ngIf="emailFormControl.hasError('required')">
+                                </mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width" appearance="outline" value="PhoneNumber">
+                                <mat-label>PhoneNumber</mat-label>
+                                <input type="name" matInput [formControl]="PhoneNumberFormControl"
+                                    [errorStateMatcher]="matcher" placeholder="Ex. 123456">
+                                <mat-error
+                                    *ngIf="PhoneNumberFormControl.hasError('PhoneNumber') && !PhoneNumberFormControl.hasError('required')">
+                                    Please enter a valid PhoneNumber
+                                </mat-error>
+                                <mat-error *ngIf="PhoneNumberFormControl.hasError('required')">
+                                </mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width" appearance="outline" value="descriptionbox">
+                                <mat-label>description </mat-label>
+                                <textarea matInput [formControl]="descriptionFormControl" [errorStateMatcher]="matcher"
+                                    placeholder="filldescription"></textarea>
+                                <mat-error
+                                    *ngIf="descriptionFormControl.hasError('filldescription') && !descriptionFormControl.hasError('required')">
+                                    Please enter a valid description
+                                </mat-error>
+                                <mat-error *ngIf="descriptionFormControl.hasError('required')">
+                                </mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button mat-stroked-button>Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 </div>

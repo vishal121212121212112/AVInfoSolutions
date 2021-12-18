@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class ServiceComponent implements OnInit {
   name = 'Get Current Url Route Demo';
-  currentRoute: string;
+  // currentRoute: string;
 
   constructor() { }
 
