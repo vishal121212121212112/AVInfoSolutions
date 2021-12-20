@@ -6,12 +6,11 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent implements OnInit {
-  name = 'Get Current Url Route Demo';
-  // currentRoute: string;
-
-  constructor() { }
-
-  ngOnInit(): void {
+  public href : string = "";
+  constructor(private router : Router) { 
   }
-
+  
+  ngOnInit(): void {
+    this.href = this.router.url;
+  }
 }

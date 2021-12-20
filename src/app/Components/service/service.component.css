@@ -9,9 +9,9 @@
     flex-wrap: wrap;
   }
   .mat-card {
-    width: 300px;
+    width: 320px;
     height: 310px;
-    padding: 10px 25px;
+    padding: 10px 15px;
     margin: 10px;
     display: flex;
     flex-direction: column;
