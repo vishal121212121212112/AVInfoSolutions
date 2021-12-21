@@ -1,3 +1,18 @@
 .img-class{
 margin-left: 85px;
 }
+#career
+{
+    background: transparent url("src/assets/images/HDbackround.jpg") no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center
+{
+    color: #fff;
+    vertical-align: middle;
+}
