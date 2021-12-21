@@ -27,6 +27,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { HomeComponent } from './Components/home/home.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
+import { CareerComponent } from './Components/career/career.component';
 
 
 
@@ -38,7 +39,8 @@ import {MatCardModule} from '@angular/material/card';
     ContactUsComponent,
     AboutUsComponent,
     MainNavComponent,
-    HomeComponent
+    HomeComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
