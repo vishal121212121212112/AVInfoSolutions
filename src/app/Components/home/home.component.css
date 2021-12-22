@@ -1,7 +1,7 @@
 .home1 {
-  background: #ffffff url("src\assets\images\WeWork.jpg") no-repeat center
+  background: #ffffff url("src\assets\images\homePick.jpg") no-repeat center
     top;
-  display: block;
+  display: block ;
   width: 100vw;
   height: 100vh;
 }
@@ -14,5 +14,5 @@
 }
 .home1 .first {
   font: italic small-caps bold 22px/30px Georgia, serif;
-  color: rgba(221, 233, 225, 0.986);
+  color: rgba(29, 15, 221, 0.986);
 }
