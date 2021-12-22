@@ -1,7 +1,6 @@
 .home1 {
-  background: #ffffff url("src\assets\images\soft.jpg") no-repeat center
+  background: #ffffff url("src\assets\images\Architecture.jpg") no-repeat center
     top;
-  background-size: cover;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -15,5 +14,5 @@
 }
 .home1 .first {
   font: italic small-caps bold 22px/30px Georgia, serif;
-  color: cornsilk;
+  color: rgb(7, 204, 66);
 }
