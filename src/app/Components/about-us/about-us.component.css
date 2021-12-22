@@ -1,7 +1,19 @@
-.about-us
+
+#about-us
 {
+    background: transparent url("src/assets/images/Aboutus.jpg") no-repeat center;
     background-size: cover;
-    width: 1366px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.text-center
+{
+    color: #fff;
+    vertical-align: middle;
 }
 .paragraph{
     margin-left: 20px;
