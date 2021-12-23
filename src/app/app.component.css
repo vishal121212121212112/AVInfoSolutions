@@ -16,8 +16,7 @@
   top: 0;
   z-index: 1;
 }
-.hidden
-{
+.hidden {
   display: none;
 }
 .example-spacer {

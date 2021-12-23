@@ -1,7 +1,7 @@
 .home1 {
-  background: #ffffff url("src\assets\images\homePick.jpg") no-repeat center
-    top;
-  display: block ;
+  background: #ffffff url("src\assets\images\homePick.jpg") no-repeat center top;
+  background-size: cover;
+  display: block;
   width: 100vw;
   height: 100vh;
 }
@@ -12,7 +12,25 @@
   align-items: center;
   height: 90vh;
 }
-.home1 .first {
-  font: italic small-caps bold 22px/30px Georgia, serif;
-  color: rgba(206, 228, 11, 0.986);
+.first h2,h4 {
+  font: italic bold 22px/30px Constantia;
+  color: whitesmoke;
+}
+.first h2:hover,h4:hover {
+}
+.first {
+  background-image: linear-gradient(to bottom right,rgba(0,0,0,0.9), rgba(255,255,0,0.2 ));
+  padding: 45px;
+  border-radius: 25px 0;
+  transition: ease-in .33s;
+  box-sizing: border-box;
+}
+.first:hover
+{
+  font: italic bold 26px/30px Constantia;
+  border-radius:0 35px;
+}
+p_txt
+{
+  padding: 25px;
 }
