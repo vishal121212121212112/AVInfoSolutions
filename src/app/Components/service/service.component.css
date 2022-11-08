@@ -28,8 +28,19 @@
     box-sizing: border-box;
     padding: 10px;
     height: 100px;
-    width: 200px;
+    width: auto;
   }
+  .clients .mat-card {
+    width: 320px;
+    height: 250px;
+  }  
+  .clients .mat-card-image {
+    height: 192px;
+  }
+  .clients .gmiLogo {
+    height: auto;
+  }
+  
   
   
   
